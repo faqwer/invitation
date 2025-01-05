@@ -1,0 +1,21 @@
+{
+  "name": "invitation",
+  "version": "1.0.0",
+  "description": "invitation",
+  "main": "index.js",
+  "scripts": {
+    "lambda:start": "netlify-lambda serve src/functions",
+    "build": "webpack --config ./config/webpack.config.build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "netlify-lambda": "^2.0.16"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
