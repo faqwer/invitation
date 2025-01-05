@@ -1,3 +1,9 @@
 [build]
   command = "npm run build" 
   functions = "dist/functions"
+
+[[redirects]]
+  from = "/proxy/*"
+  to = "https://mangochoco.netlify.app/:splat"
+  status = 200
+  force = true
