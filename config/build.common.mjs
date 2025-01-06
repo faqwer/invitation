@@ -128,12 +128,9 @@ const run = async () => {
     console.log("Watching and syncing files...");
 
     await Promise.all([
-      watchAndSync("src/common/audio", "*/*/common/audio"),
-      watchAndSync("src/common/fonts", "*/*/common/fonts"),
-      watchAndSync("src/common/images", "*/*/common/images"),
-      // watchAndSync("src/common/images/common", "*/*/common/images/common"),
-      // watchAndSync("src/common/images/video", "*/*/common/images/video", ["02_ABC_Song", "04_Chant"]),
-      watchAndSync("src/common/cc", "*/*/common/cc"),
+      watchAndSync("src/common/audio", "common/audio"),
+      watchAndSync("src/common/fonts", "common/fonts"),
+      watchAndSync("src/common/images", "common/images"),
     ]);
 
     console.log("File watching started. Press Ctrl+C to exit.");
