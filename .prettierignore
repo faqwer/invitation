@@ -1,0 +1,8 @@
+dist
+zip
+.vscode
+**/.git
+**/milkt
+**/node_modules
+**/animation.js
+**/animation.html

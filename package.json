@@ -1,21 +1,26 @@
 {
-  "name": "invitation",
-  "version": "1.0.0",
-  "description": "invitation",
-  "main": "index.js",
   "scripts": {
     "lambda:start": "netlify-lambda serve src/functions",
-    "build": "webpack --config ./config/webpack.config.build.js"
+    "serve": "node ./config/server.mjs",
+    "dev": "node ./config/build.dev.mjs",
+    "build": "node ./config/build.prod.mjs",
+    "common": "node ./config/build.common.mjs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "20.14.9",
+    "@types/ua-parser-js": "0.7.39",
+    "esbuild": "0.23.0",
+    "tiny-glob": "0.2.9",
+    "typescript": "5.5.3",
     "netlify-lambda": "^2.0.16"
   },
   "devDependencies": {
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.7.2",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1"
+    "gsap": "3.12.5",
+    "live-server": "1.2.2",
+    "overlayscrollbars": "2.9.2",
+    "sanitize.css": "13.0.0",
+    "ua-parser-js": "1.0.38"
   }
 }
